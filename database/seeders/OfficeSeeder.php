@@ -91,7 +91,7 @@ class OfficeSeeder extends Seeder
             'Site Silting',
             'Feedback/Complaints'
         ],
-        'SGOD- School Governance and Operations Division' => [
+        'School Governance and Operations Division' => [
             'Monitoring and Evaluation, Social Mobilization and Networking, Planning and Research, Human Resource Development, Physical Facilities, School Health and Nutrition Unit' => [
                 'Private School-Related',
                 'Basin Education Data',
@@ -154,28 +154,6 @@ class OfficeSeeder extends Seeder
             }
         }
     }
-//     foreach ($offices as $officeName => $services) {
-//         $office = Office::create(['office_name' => $officeName]);
-
-//         if (is_array($services)) {
-//             foreach ($services as $subName => $subServices) {
-//                 if (is_array($subServices)) {
-//                     foreach ($subServices as $serviceName) {
-//                         Service::create([
-//                             'office_name' => $office->id,
-//                             'service' => $subName . ' - ' . $serviceName
-//                         ]);
-//                     }
-//                 } else {
-//                     Service::create([
-//                         'office_name' => $office->id,
-//                         'service' => $subServices
-//                     ]);
-//                 }
-//             }
-//         }
-//     }
-// }
 }
 
     

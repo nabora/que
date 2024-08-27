@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
+            $table->string('session_id')->nullable();
             $table->string('queue_number');
             $table->foreignId('office_id')->constrained()->onDelete('cascade');
             $table->json('service')->constrained()->onDelete('cascade');

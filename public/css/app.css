@@ -12,15 +12,24 @@ body{
     align-items: left;
     background: rgba(255, 255, 255, 0.6);
 }
+.custom-container {
+    border-radius: 25px;
+}
+.alert{
+    height: 75px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    font-size: large;
+}
 .select-title{
     font-family:fantasy;
-    font-size: xx-large;
+    font-size: 40px;
     -webkit-text-fill-color: white;
-
  }
 .btn-office {
     background-color: white;
-    height: 100px;
+    height: 90px;
     border-radius: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: medium;
