@@ -12,15 +12,19 @@
             body {
                 width: 80mm;
                 font-family: Arial, sans-serif;
-                font-size: 15px;
-                margin: 0;
+                font-size: 18px;
+                margin-top: 0;
                 padding: 0;
+            }
+            .container{
+                margin-top: 0px;
+                padding: 0px;
             }
             .text{
                 font-size: 30px;
             }
             p {
-                margin: 0 0 1px 0;
+                margin: 0 0 5px 0;
                 line-height: 1.2;
             }
             hr {
@@ -39,7 +43,7 @@
         @else
             @foreach($transactions as $transaction)
                 <h1 class="text-center fw-bold text">{{ $transaction->queue_number }}</h1>
-                <p class="text-center ">{{ $transaction->office->office_name }}</p>
+                <p>{{ $transaction->office->office_name }}</p>
                 <p><b>Services Selected:</b></p>
                 <ul>
                     @foreach (json_decode($transaction->service) as $service)

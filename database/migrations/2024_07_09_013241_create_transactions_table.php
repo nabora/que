@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('session_id')->nullable();
             $table->string('queue_number');
+            $table->string('status');
             $table->foreignId('office_id')->constrained()->onDelete('cascade');
             $table->json('service')->constrained()->onDelete('cascade');
             $table->timestamps();

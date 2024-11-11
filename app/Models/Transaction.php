@@ -14,6 +14,7 @@ class Transaction extends Model
         'session_id',
         'office_id',
         'service',
+        'status',
     ];
     public function office()
     {
@@ -21,3 +22,4 @@ class Transaction extends Model
     }
 
 }
+    
